@@ -9,7 +9,7 @@ jobs:
       - name: Slack Notification
         uses: rtCamp/action-slack-notify@master
         env:
-          SLACK_WEBHOOK_INFO: ${{ secrets.SLACK_WEBHOOK_INFO }}
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
           SLACK_TITLE: 'A new PR was created!'
           SLACK_COLOR: '#3278BD'
           SLACK_MESSAGE: '${{ github.actor }} created new PR on ${{ github.repository}}'
